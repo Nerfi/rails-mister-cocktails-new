@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  get 'cocktails', to: "cocktails#index"
+  resources :cocktails
 
-  get 'cocktails/new', to: "cocktails#new"
+  #get 'cocktails', to: "cocktails#index"
 
-  post 'cocktails', to: "cocktails#create"
+  #get 'cocktails/new', to: "cocktails#new"
 
-  get 'cocktails/:id', to: "cocktails#show"
+  #post 'cocktails', to: "cocktails#create"
+
+  #NB: The `show` route needs to be *after* `new` route
+  #get 'cocktails/:id', to: "cocktails#show"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
