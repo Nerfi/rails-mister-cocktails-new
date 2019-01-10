@@ -8,7 +8,7 @@ class Dose < ApplicationRecord
 
   #check out this validation in case not working
 
-  validates :description, presence: true, inclusion: {in:[cocktail,ingredient]}, uniqueness: true
+ # validates :description, presence: true, inclusion: {in:[cocktail,ingredient]}, uniqueness: true
 
 
 end
