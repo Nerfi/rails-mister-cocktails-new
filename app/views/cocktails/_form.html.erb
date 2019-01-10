@@ -1,0 +1,10 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+
+<%= simple_form_for(@cocktail, class: 'form') do |f| %>
+  <%= f.text_field :name %>
+
+<%= f.button :submit, "submit your cocktail", class: "my-button" %>
+
+<% end %>
+</div>
