@@ -3,16 +3,16 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.all
   end
 
+  def show
+      @cocktail = Cocktail.find(params[:id])
+
+  end
 
   def new
     @cocktail = Cocktail.new
 
   end
 
-  def show
-      @cocktail = Cocktail.find(params[:id])
-
-  end
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
