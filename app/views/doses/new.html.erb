@@ -1,4 +1,8 @@
+
+<!-- de esta forma ligamos a  @cocktail su respectiva @dose
+para que los sean una sola cosa, PD: mirar ejemplo mejor -->
+
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :content %>
-  <%= f.submit "add a dose", class: "btn btn-primary" %>
+  <%= f.submit "add a dose", class: "btn btn-danger" %>
 <% end %>
