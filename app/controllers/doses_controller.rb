@@ -17,6 +17,7 @@ class DosesController < ApplicationController
   end
 
   private
+  #never trust user data
 
   def dose_params
     params.require(:dose).permit(:content)
