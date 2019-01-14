@@ -8,6 +8,11 @@ class CocktailsController < ApplicationController
 
   end
 
+  def home
+    @cocktail = Cocktail.all
+
+  end
+
   def new
     @cocktail = Cocktail.new
 

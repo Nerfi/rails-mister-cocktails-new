@@ -1,0 +1,9 @@
+<div class="col-sm-6 col-sm-offset-2">
+
+<h1>Take a look to ours Cocktails</h1>
+<% @cocktail.each do |cocktail| %>
+<li>
+<%= link_to cocktail.name %>
+</li>
+  <%end %>
+</div>
