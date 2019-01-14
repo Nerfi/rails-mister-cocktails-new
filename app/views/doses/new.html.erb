@@ -4,5 +4,6 @@ para que los sean una sola cosa, PD: mirar ejemplo mejor -->
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :content %>
+  <%= hidden_field_tag(:cocktail_id, params["cocktail"]) %>
   <%= f.submit "add a dose", class: "btn btn-danger" %>
 <% end %>
