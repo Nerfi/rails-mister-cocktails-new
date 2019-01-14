@@ -24,3 +24,5 @@ class DosesController < ApplicationController
   end
 
 end
+
+
