@@ -13,4 +13,4 @@ import 'bootstrap';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
 import { loadDynamicBannerText } from '../components/banner';
-loadDynamicBannerText();
+loadDynamicBannerText(); // de esta forma llamamos a la funcion para poder ejecutarla.

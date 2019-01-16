@@ -9,4 +9,4 @@ const loadDynamicBannerText = () => {
   });
 };
 
-export { loadDynamicBannerText };
+export { loadDynamicBannerText }; // siempre hay que exportar e importar !
