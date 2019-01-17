@@ -1,9 +1,10 @@
 
 <!-- de esta forma ligamos a  @cocktail su respectiva @dose
-para que los sean una sola cosa, PD: mirar ejemplo mejor -->
-
+para que los sean una sola cosa, PD: mirar ejemplo mejor PD: no funciona-->
+<div class="dose-container">
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :content %>
   <%= hidden_field_tag(:cocktail_id, params["cocktail"]) %>
   <%= f.submit "add a dose", class: "btn btn-danger" %>
 <% end %>
+</div>
