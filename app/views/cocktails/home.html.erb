@@ -5,9 +5,11 @@
 <p>
   <span id="banner-typed-text"></span>
 </p>
+
 <% @cocktail.each do |cocktail| %>
 <li>
-  <%= link_to cocktail.name %>
+  <%= link_to cocktail.name, cocktail %> <!-- con esta linea creamos un link para que cuando hagas click en el 'name' vayas a dicho cocktail. -->
+
 </li>
 <% end %>
     </div>
